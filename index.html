@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeElektro – Grosse Marken für kleines Geld</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== TOP NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        <a href="/" class="navbar-logo">
+            <img src="logo.png" alt="HomeElektro" class="site-logo">
+        </a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Suche nach Produkten, Marken und mehr …" autocomplete="off">
+            <button class="search-btn"><i class="fas fa-search"></i><span>Suchen</span></button>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-icon-link"><i class="fas fa-user-circle"></i><span>Einloggen</span></a>
+            <div class="cart-icon-wrapper" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-badge">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== CATEGORY NAV WITH IMAGE MEGA MENUS ===== -->
+    <div class="main-nav-bar" id="main-nav">
+        <div class="main-nav-inner">
+
+            <!-- Alle Produkte -->
+            <div class="nav-item">
+                <a href="#categories" class="nav-link">
+                    <i class="fas fa-th-large"></i> Alle Produkte <i class="fas fa-chevron-down nav-arrow"></i>
+                </a>
+                <div class="mega-menu">
+                    <div class="mega-inner">
+                        <div class="mega-col">
+                            <a href="#" class="mega-col-header"><i class="fas fa-desktop"></i> Computer <i class="fas fa-chevron-right"></i></a>
+                            <div class="mega-items-grid">
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=300&h=169&fit=crop&q=70" alt="Monitore">
+                                    <span>Monitore &amp; Zubehör</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=300&h=169&fit=crop&q=70" alt="PC-Komponenten">
+                                    <span>PC-Komponenten</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=300&h=169&fit=crop&q=70" alt="Gehäuse">
+                                    <span>Gehäuse &amp; Kühlung</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=300&h=169&fit=crop&q=70" alt="Eingabegeräte">
+                                    <span>Eingabegeräte</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1618410320928-25228d811631?w=300&h=169&fit=crop&q=70" alt="Speicher">
+                                    <span>Speicherlösungen</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1601524909162-ae8725290836?w=300&h=169&fit=crop&q=70" alt="Kabel">
+                                    <span>Kabel &amp; Adapter</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col">
+                            <a href="#" class="mega-col-header"><i class="fas fa-headphones"></i> Multimedia <i class="fas fa-chevron-right"></i></a>
+                            <div class="mega-items-grid">
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=300&h=169&fit=crop&q=70" alt="Audio">
+                                    <span>Audio &amp; Lautsprecher</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=300&h=169&fit=crop&q=70" alt="Telefone">
+                                    <span>Telefone</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=169&fit=crop&q=70" alt="Video">
+                                    <span>Video &amp; Bildübertragung</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=169&fit=crop&q=70" alt="Gadgets">
+                                    <span>Zubehör &amp; Gadgets</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=300&h=169&fit=crop&q=70" alt="Halterungen">
+                                    <span>Multimedia-Halterungen</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col">
+                            <a href="#" class="mega-col-header"><i class="fas fa-wifi"></i> Netzwerk <i class="fas fa-chevron-right"></i></a>
+                            <div class="mega-items-grid">
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=300&h=169&fit=crop&q=70" alt="Router">
+                                    <span>Router</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=169&fit=crop&q=70" alt="Repeater">
+                                    <span>Repeater</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=169&fit=crop&q=70" alt="Switches">
+                                    <span>Switches</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=169&fit=crop&q=70" alt="Smart Home">
+                                    <span>Smart-Home-Zubehör</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1612630741022-b29ec53f3e03?w=300&h=169&fit=crop&q=70" alt="Netzwerkkabel">
+                                    <span>Netzwerkkabel</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=300&h=169&fit=crop&q=70" alt="WLAN Stick">
+                                    <span>WLAN Stick</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mega-col">
+                            <a href="#" class="mega-col-header"><i class="fas fa-briefcase"></i> Büro &amp; Haushalt <i class="fas fa-chevron-right"></i></a>
+                            <div class="mega-items-grid">
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=169&fit=crop&q=70" alt="Büromöbel">
+                                    <span>Büromöbel</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=169&fit=crop&q=70" alt="Küchenmaschinen">
+                                    <span>Küchenmaschinen</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&h=169&fit=crop&q=70" alt="Klimageräte">
+                                    <span>Klimageräte</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=169&fit=crop&q=70" alt="Werkzeug">
+                                    <span>Werkzeug</span>
+                                </a>
+                                <a href="#" class="mega-item">
+                                    <img src="https://images.unsplash.com/photo-1612831455544-5f7d0dcc3e89?w=300&h=169&fit=crop&q=70" alt="Bürogeräte">
+                                    <span>Bürogeräte</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Markenwelten -->
+            <div class="nav-item">
+                <a href="#brands" class="nav-link">
+                    <i class="fas fa-star"></i> Markenwelten <i class="fas fa-chevron-down nav-arrow"></i>
+                </a>
+                <div class="mega-menu mega-brands">
+                    <div class="mega-inner brands-inner">
+                        <div class="brands-col-group">
+                            <p class="brands-group-title">Computer &amp; Technik</p>
+                            <div class="brands-row">
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=300&h=300&fit=crop&q=70" alt="ASUS">
+                                    <span>ASUS</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&h=300&fit=crop&q=70" alt="be quiet!">
+                                    <span>be quiet!</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=300&h=300&fit=crop&q=70" alt="ENDORFY">
+                                    <span>ENDORFY</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1583195764036-52a1ac38a5f1?w=300&h=300&fit=crop&q=70" alt="LogiLink">
+                                    <span>LogiLink</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="brands-col-group">
+                            <p class="brands-group-title">Netzwerk</p>
+                            <div class="brands-row">
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=300&h=300&fit=crop&q=70" alt="FRITZ!">
+                                    <span>FRITZ!</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=300&h=300&fit=crop&q=70" alt="TP-Link">
+                                    <span>TP-Link</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="brands-col-group">
+                            <p class="brands-group-title">Multimedia &amp; Büro</p>
+                            <div class="brands-row">
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=300&h=300&fit=crop&q=70" alt="EDIFIER">
+                                    <span>EDIFIER</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1612831455544-5f7d0dcc3e89?w=300&h=300&fit=crop&q=70" alt="HP">
+                                    <span>HP</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&h=300&fit=crop&q=70" alt="Nilfisk">
+                                    <span>Nilfisk</span>
+                                </a>
+                                <a href="#" class="brand-mega-card">
+                                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=300&fit=crop&q=70" alt="OLYMPIA">
+                                    <span>OLYMPIA</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="#angebote" class="nav-link nav-sale">
+                    <i class="fas fa-tag"></i> Angebote <span class="sale-pill">SALE</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#blog" class="nav-link"><i class="fas fa-book-open"></i> Ratgeber</a>
+            </div>
+            <div class="nav-item">
+                <a href="#service" class="nav-link"><i class="fas fa-headset"></i> Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <img src="logo.png" alt="HomeElektro" class="mobile-logo">
+            <button id="close-mobile-menu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mobile-links">
+            <a href="#categories"><i class="fas fa-th-large"></i> Alle Produkte</a>
+            <a href="#"><i class="fas fa-desktop"></i> Computer</a>
+            <a href="#"><i class="fas fa-headphones"></i> Multimedia</a>
+            <a href="#"><i class="fas fa-wifi"></i> Netzwerk</a>
+            <a href="#"><i class="fas fa-briefcase"></i> Büro &amp; Haushalt</a>
+            <a href="#brands"><i class="fas fa-star"></i> Markenwelten</a>
+            <a href="#angebote" class="mobile-sale"><i class="fas fa-tag"></i> Angebote</a>
+            <a href="#blog"><i class="fas fa-book-open"></i> Ratgeber</a>
+            <a href="#service"><i class="fas fa-headset"></i> Service</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero" id="home">
+        <div class="hero-track" id="hero-track">
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1591488320449-011701bb6704?w=1600&q=85')">
+                <div class="hero-content"><div class="hero-tag">NEU</div><h1>Ultra-leichte Gaming-Maus</h1><p>110 Std. kabellos, High-End-Sensor und nur 55 g – entfesselt dein volles Gaming-Potenzial.</p><div class="hero-btns"><a href="#" class="btn-primary">Jetzt entdecken</a><a href="#" class="btn-ghost">Alle Angebote</a></div></div>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1600&q=85')">
+                <div class="hero-content"><div class="hero-tag">EDIFIER</div><h1>Kraftvoller Klang, stylisches Design</h1><p>Regallautsprecher für Musik, Filme und Games – Bluetooth 5.0, elegantes Holzdesign.</p><div class="hero-btns"><a href="#" class="btn-primary">Jetzt entdecken</a></div></div>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1563770660941-20978e870e26?w=1600&q=85')">
+                <div class="hero-content"><div class="hero-tag">FRITZ!</div><h1>Zuhause perfekt vernetzt</h1><p>Router, Mesh-WLAN &amp; Smart-Home für ein schnelles, stabiles Heimnetz – alles aus einer Hand.</p><div class="hero-btns"><a href="#" class="btn-primary">Jetzt entdecken</a></div></div>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85')">
+                <div class="hero-content"><div class="hero-tag">SMART HOME</div><h1>Wohlige Wärme auf Knopfdruck</h1><p>Mit smarten Heizkörperthermostaten behältst du dein Zuhause jederzeit gemütlich temperiert.</p><div class="hero-btns"><a href="#" class="btn-primary">Jetzt entdecken</a></div></div>
+            </div>
+        </div>
+        <button class="hero-arrow prev" id="hero-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-arrow next" id="hero-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="hero-dots" id="hero-dots">
+            <button class="hdot active" data-i="0"></button>
+            <button class="hdot" data-i="1"></button>
+            <button class="hdot" data-i="2"></button>
+            <button class="hdot" data-i="3"></button>
+        </div>
+    </section>
+
+    <!-- ===== USP STRIP ===== -->
+    <section class="usp-strip">
+        <div class="usp-inner">
+            <a href="#" class="usp-item"><div class="usp-ico"><i class="fas fa-shipping-fast"></i></div><div class="usp-txt"><strong>Schnelle Lieferung</strong><span>1–2 Werktage bei Lagerware</span></div></a>
+            <a href="#" class="usp-item"><div class="usp-ico"><i class="fas fa-box-open"></i></div><div class="usp-txt"><strong>Gratis Versand</strong><span>Standardversand nur 3,90 €</span></div></a>
+            <a href="#" class="usp-item"><div class="usp-ico"><i class="fas fa-undo-alt"></i></div><div class="usp-txt"><strong>Kostenfreie Rücksendung</strong><span>Innerhalb von 30 Tagen</span></div></a>
+            <a href="#" class="usp-item"><div class="usp-ico"><i class="fas fa-lock"></i></div><div class="usp-txt"><strong>Sichere Bezahlung</strong><span>Paypal, Visa, Mastercard &amp; mehr</span></div></a>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CATEGORY CARDS ===== -->
+    <section class="wrap" id="categories">
+        <div class="inner">
+            <div class="cat-main-row">
+                <a href="#" class="cat-main"><div class="cat-main-img"><img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500&q=80" alt="Computer" loading="lazy"></div><span>Computer</span></a>
+                <a href="#" class="cat-main"><div class="cat-main-img"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&q=80" alt="Multimedia" loading="lazy"></div><span>Multimedia</span></a>
+                <a href="#" class="cat-main"><div class="cat-main-img"><img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=500&q=80" alt="Netzwerk" loading="lazy"></div><span>Netzwerk</span></a>
+                <a href="#" class="cat-main"><div class="cat-main-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="Büro" loading="lazy"></div><span>Büro</span></a>
+                <a href="#" class="cat-main"><div class="cat-main-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="Haushalt" loading="lazy"></div><span>Haushalt</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROMO BANNERS ===== -->
+    <section class="promo-pair">
+        <div class="promo-inner">
+            <a href="#" class="promo-card">
+                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=800&q=80" alt="Gaming" loading="lazy">
+                <div class="promo-txt"><span>Gaming Week</span><h3>Bis zu 30% Rabatt auf Gaming-Peripherie</h3><em>Jetzt shoppen <i class="fas fa-arrow-right"></i></em></div>
+            </a>
+            <a href="#" class="promo-card promo-accent">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80" alt="Netzwerk" loading="lazy">
+                <div class="promo-txt"><span>Netzwerk-Special</span><h3>Schnelles WLAN für jedes Zuhause</h3><em>Jetzt entdecken <i class="fas fa-arrow-right"></i></em></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== NEU IM SHOP ===== -->
+    <section class="wrap bg-gray" id="new-shop">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>NEU im Shop</h2>
+                <a href="#" class="view-all">Alle anzeigen <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="badges"><span class="b-ship">Versandkostenfrei</span><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500&q=80" alt="Gehäuse" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">Silentware</div><h3 class="pname"><a href="#">Flow 110 Black – A-RGB Midi Tower mit Meshfront &amp; 4 Lüftern</a></h3><div class="pprices"><span class="p-new">74,80 €</span></div><button class="add-to-cart" data-name="Silentware Flow 110 Black" data-price="74.80" data-img="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-ship">Versandkostenfrei</span><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1583195764036-52a1ac38a5f1?w=500&q=80" alt="Kühler" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1618410320928-25228d811631?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">Silentware</div><h3 class="pname"><a href="#">Bora Black – CPU-Luftkühler, 5 Heatpipes, A-RGB, 215W TDP</a></h3><div class="pprices"><span class="p-new">30,17 €</span></div><button class="add-to-cart" data-name="Silentware Bora Black" data-price="30.17" data-img="https://images.unsplash.com/photo-1583195764036-52a1ac38a5f1?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-ship">Versandkostenfrei</span><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&q=80" alt="Lautsprecher" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">EDIFIER</div><h3 class="pname"><a href="#">S880DB – Regallautsprecher, Bluetooth 5.0, optischer Eingang</a></h3><div class="pprices"><span class="p-new">299,00 €</span></div><button class="add-to-cart" data-name="EDIFIER S880DB" data-price="299.00" data-img="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=500&q=80" alt="Tastatur" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1601524909162-ae8725290836?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">ENDORFY</div><h3 class="pname"><a href="#">Thock 75% – Mechanische Gaming-Tastatur, RGB, Hot-Swap</a></h3><div class="pprices"><span class="p-new">89,90 €</span></div><button class="add-to-cart" data-name="ENDORFY Thock 75%" data-price="89.90" data-img="https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-ship">Versandkostenfrei</span><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=500&q=80" alt="Monitor" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">ASUS</div><h3 class="pname"><a href="#">ProArt PA278CV – 27" IPS, 4K, 100% sRGB, USB-C</a></h3><div class="pprices"><span class="p-old">499,00 €</span><span class="p-new">379,00 €</span><span class="p-save">-24%</span></div><button class="add-to-cart" data-name="ASUS ProArt PA278CV" data-price="379.00" data-img="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-sale">SALE</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=500&q=80" alt="Router" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">FRITZ!</div><h3 class="pname"><a href="#">Box 7690 – WLAN 7, Tri-Band, 2.5 Gbit/s WAN/LAN</a></h3><div class="pprices"><span class="p-old">279,00 €</span><span class="p-new">229,00 €</span><span class="p-save">-18%</span></div><button class="add-to-cart" data-name="FRITZ!Box 7690" data-price="229.00" data-img="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-ship">Versandkostenfrei</span><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1527443224154-c4a573d84570?w=500&q=80" alt="Tower" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">Silentware</div><h3 class="pname"><a href="#">View A-RGB Black – Showcase Midi Tower, Glasfront &amp; 4 RGB Lüftern</a></h3><div class="pprices"><span class="p-new">89,80 €</span></div><button class="add-to-cart" data-name="Silentware View A-RGB Black" data-price="89.80" data-img="https://images.unsplash.com/photo-1527443224154-c4a573d84570?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-new">NEU</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=80" alt="Thermostat" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">Olympia</div><h3 class="pname"><a href="#">HT 430-22 Heizkörperthermostat – programmierbar (6er Set)</a></h3><div class="pprices"><span class="p-new">69,90 €</span></div><button class="add-to-cart" data-name="Olympia HT 430-22" data-price="69.90" data-img="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARKENWELTEN ===== -->
+    <section class="wrap" id="brands">
+        <div class="inner">
+            <div class="sec-head"><h2>Entdecke unsere Markenwelten</h2></div>
+            <div class="brands-grid">
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=500&q=80" alt="FRITZ!" loading="lazy"><div class="brand-tile-lbl">FRITZ!</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&q=80" alt="ASUS" loading="lazy"><div class="brand-tile-lbl">ASUS</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="be quiet!" loading="lazy"><div class="brand-tile-lbl">be quiet!</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500&q=80" alt="ENDORFY" loading="lazy"><div class="brand-tile-lbl">ENDORFY</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&q=80" alt="EDIFIER" loading="lazy"><div class="brand-tile-lbl">EDIFIER</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1583195764036-52a1ac38a5f1?w=500&q=80" alt="LogiLink" loading="lazy"><div class="brand-tile-lbl">LogiLink</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&q=80" alt="TP-Link" loading="lazy"><div class="brand-tile-lbl">TP-Link</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1612831455544-5f7d0dcc3e89?w=500&q=80" alt="HP" loading="lazy"><div class="brand-tile-lbl">HP</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="OLYMPIA" loading="lazy"><div class="brand-tile-lbl">OLYMPIA</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="GENIE" loading="lazy"><div class="brand-tile-lbl">GENIE</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80" alt="Nilfisk" loading="lazy"><div class="brand-tile-lbl">Nilfisk</div></a>
+                <a href="#" class="brand-tile"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Adler" loading="lazy"><div class="brand-tile-lbl">Adler</div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BELIEBTE KATEGORIEN ===== -->
+    <section class="wrap bg-gray">
+        <div class="inner">
+            <div class="sec-head"><h2>Beliebte Kategorien</h2></div>
+            <div class="pop-cats">
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=460&q=80" alt="Gehäuse" loading="lazy"><span>Gehäuse</span></a>
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=460&q=80" alt="Monitore" loading="lazy"><span>Monitore &amp; Zubehör</span></a>
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1583195764036-52a1ac38a5f1?w=460&q=80" alt="PC-Kühlung" loading="lazy"><span>PC-Kühlung</span></a>
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=460&q=80" alt="Router" loading="lazy"><span>Router</span></a>
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=460&q=80" alt="Repeater" loading="lazy"><span>Repeater</span></a>
+                <a href="#" class="pop-cat"><img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=460&q=80" alt="Lautsprecher" loading="lazy"><span>Lautsprecher</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ANGEBOTE ===== -->
+    <section class="wrap" id="angebote">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>🔥 Aktuelle Angebote</h2>
+                <a href="#" class="view-all">Alle Angebote <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="badges"><span class="b-sale">-30%</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1590658006821-04f4008d5717?w=500&q=80" alt="Headset" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">ASUS</div><h3 class="pname"><a href="#">ROG Fusion II 500 – Gaming-Headset, 7.1 Surround, USB</a></h3><div class="pprices"><span class="p-old">129,00 €</span><span class="p-new">89,90 €</span><span class="p-save">-30%</span></div><button class="add-to-cart" data-name="ASUS ROG Fusion II 500" data-price="89.90" data-img="https://images.unsplash.com/photo-1590658006821-04f4008d5717?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-sale">-22%</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&q=80" alt="Stand" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">LogiLink</div><h3 class="pname"><a href="#">Notebook-Ständer Aluminium, faltbar, für 10"–16" Laptops</a></h3><div class="pprices"><span class="p-old">44,90 €</span><span class="p-new">34,99 €</span><span class="p-save">-22%</span></div><button class="add-to-cart" data-name="LogiLink Notebook-Ständer" data-price="34.99" data-img="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-sale">-25%</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1612630741022-b29ec53f3e03?w=500&q=80" alt="Switch" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">TP-Link</div><h3 class="pname"><a href="#">TL-SG116 – 16-Port Gigabit Unmanaged Switch, lüfterlos</a></h3><div class="pprices"><span class="p-old">59,90 €</span><span class="p-new">44,99 €</span><span class="p-save">-25%</span></div><button class="add-to-cart" data-name="TP-Link TL-SG116" data-price="44.99" data-img="https://images.unsplash.com/photo-1612630741022-b29ec53f3e03?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+                <div class="product-card">
+                    <div class="badges"><span class="b-sale">-35%</span></div>
+                    <a href="#" class="pimg-wrap"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80" alt="Staubsauger" class="img-f" loading="lazy"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="hover" class="img-b" loading="lazy"></a>
+                    <div class="pinfo"><div class="pbrand">Nilfisk</div><h3 class="pname"><a href="#">Core 30P – Beutellos, HEPA 13 Filter, 700W, inkl. Zubehör</a></h3><div class="pprices"><span class="p-old">179,00 €</span><span class="p-new">115,99 €</span><span class="p-save">-35%</span></div><button class="add-to-cart" data-name="Nilfisk Core 30P" data-price="115.99" data-img="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80"><i class="fas fa-cart-plus"></i> In den Warenkorb</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURE BANNERS ===== -->
+    <section class="feat-banners">
+        <div class="feat-inner">
+            <a href="#" class="feat-card"><img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=800&q=80" alt="" loading="lazy"><div class="feat-txt"><span>WLAN-Router</span><h3>Ultraschnelles WLAN für dein Zuhause</h3></div></a>
+            <a href="#" class="feat-card"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="" loading="lazy"><div class="feat-txt"><span>Mobil-Zubehör</span><h3>Immer erreichbar</h3></div></a>
+            <a href="#" class="feat-card"><img src="https://images.unsplash.com/photo-1590658006821-04f4008d5717?w=800&q=80" alt="" loading="lazy"><div class="feat-txt"><span>Headsets</span><h3>Exzellente Soundqualität</h3></div></a>
+            <a href="#" class="feat-card"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80" alt="" loading="lazy"><div class="feat-txt"><span>Alles auf Empfang</span><h3>Flächendeckendes WLAN</h3></div></a>
+        </div>
+    </section>
+
+    <!-- ===== RATGEBER / BLOG ===== -->
+    <section class="wrap bg-gray" id="blog">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Interessantes aus unserem Ratgeber</h2>
+                <a href="#" class="view-all">Alle anzeigen <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="blog-grid">
+                <a href="#" class="blog-card"><div class="blog-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="" loading="lazy"></div><div class="blog-body"><span>Haushaltstipps</span><h3>Heißluftfritteuse statt Backofen: So sparst du Energie, Zeit und Kalorien</h3><p>Eine Heißluftfritteuse gehört längst zu den beliebtesten Küchenhelfern – schnell, flexibel und spart spürbar Energie.</p></div></a>
+                <a href="#" class="blog-card"><div class="blog-img"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="" loading="lazy"></div><div class="blog-body"><span>Haushaltstipps</span><h3>Smart-Home 2026: Welche Geräte lohnen sich wirklich?</h3><p>Das Smart-Home ist mehr als ein Trend. Intelligente Geräte erleichtern den Alltag, sparen Energie und erhöhen die Sicherheit.</p></div></a>
+                <a href="#" class="blog-card"><div class="blog-img"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="" loading="lazy"></div><div class="blog-body"><span>Haushaltstipps</span><h3>Strom sparen im Winter: So bleibst du warm ohne hohe Kosten</h3><p>Mit ein paar cleveren Tipps lässt sich gezielt Energie sparen und die Stromrechnung senken.</p></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-sec">
+        <div class="nl-inner">
+            <div class="nl-text"><h2>Immer top informiert bleiben</h2><p>Abonniere unseren Newsletter für exklusive Angebote, Neuheiten und Tipps rund um Top-Markenprodukte.</p></div>
+            <form class="nl-form" id="newsletter-form">
+                <input type="email" placeholder="Deine E-Mail-Adresse …" required>
+                <button type="submit">Abonnieren <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="service">
+        <div class="footer-usp-bar">
+            <div class="f-usp-inner">
+                <div class="f-usp"><i class="fas fa-shipping-fast"></i><div><strong>Schnelle Lieferung</strong><span>1–2 Werktage</span></div></div>
+                <div class="f-usp"><i class="fas fa-box-open"></i><div><strong>Gratis Versand</strong><span>Standardversand 3,90 €</span></div></div>
+                <div class="f-usp"><i class="fas fa-undo-alt"></i><div><strong>Kostenfreie Rücksendung</strong><span>Innerhalb von 30 Tagen</span></div></div>
+                <div class="f-usp"><i class="fas fa-lock"></i><div><strong>Sichere Bezahlung</strong><span>Paypal, Visa &amp; mehr</span></div></div>
+            </div>
+        </div>
+        <div class="footer-body">
+            <div class="footer-cols">
+                <div class="fcol fcol-brand">
+                    <img src="logo.png" alt="HomeElektro" class="footer-logo">
+                    <p>Seit mehr als 20 Jahren verkaufen wir ausgewählte Markenprodukte aus Computer, Multimedia, Netzwerk, Büro und Haushalt.</p>
+                </div>
+                <div class="fcol">
+                    <h4>Service</h4>
+                    <ul><li><a href="#">Kontaktiere uns</a></li><li><a href="#">Versand &amp; Zahlung</a></li><li><a href="#">Unsere Marken</a></li><li><a href="#">Häufige Fragen</a></li></ul>
+                </div>
+                <div class="fcol">
+                    <h4>Über uns</h4>
+                    <ul><li><a href="#">Unternehmen</a></li><li><a href="#">Jobs &amp; Karriere</a></li><li><a href="#">Datenschutz</a></li><li><a href="#">Impressum</a></li></ul>
+                </div>
+                <div class="fcol fcol-nl">
+                    <h4>Newsletter</h4>
+                    <p>Exklusive Angebote &amp; Neuigkeiten zu Top-Markenprodukten!</p>
+                    <form id="footer-newsletter-form">
+                        <input type="email" placeholder="E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-pay">
+                    <span>Zahlungsmethoden:</span>
+                    <div class="pay-icons"><i class="fab fa-paypal"></i><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-apple-pay"></i><i class="fab fa-google-pay"></i><i class="fab fa-cc-amex"></i></div>
+                </div>
+                <div class="footer-legal">
+                    <span>&copy; 2026 HomeElektro – Grosse Marken für kleines Geld</span>
+                    <a href="#">AGB</a><a href="#">Datenschutz</a><a href="#">Cookies</a><a href="#">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <div id="cart-sidebar">
+        <div class="cart-hd"><h3><i class="fas fa-shopping-cart"></i> Warenkorb</h3><button id="close-cart"><i class="fas fa-times"></i></button></div>
+        <div id="cart-items">
+            <div class="cart-empty"><i class="fas fa-shopping-cart cart-empty-ico"></i><p>Ihr Warenkorb ist leer</p><a href="#categories" class="btn-start-shop">Jetzt einkaufen</a></div>
+        </div>
+        <div class="cart-ft">
+            <div id="cart-total"><span>Zwischensumme</span><strong>0,00 €</strong></div>
+            <button class="cart-checkout-btn">Zur Kasse gehen <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
